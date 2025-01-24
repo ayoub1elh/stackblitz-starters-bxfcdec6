@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -8,6 +8,11 @@ export default function Header() {
           <li>
             <Link href="/" className="text-blue-600 hover:text-blue-800">
               Home
+            </Link>
+          </li>
+          <li>
+            <Link href="/data" className="text-blue-600 hover:text-blue-800">
+              Pokémon List
             </Link>
           </li>
         </ul>

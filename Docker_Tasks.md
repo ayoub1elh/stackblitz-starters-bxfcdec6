@@ -17,6 +17,7 @@ This task is designed to assess your proficiency with Docker's command-line inte
 - Map port `8080` on the host to port `80` in the container.
 
 **Command**:
+docker run -d -p 8080:80 nginx
 
 ### Task 2: List Containers
 
@@ -28,6 +29,7 @@ This task is designed to assess your proficiency with Docker's command-line inte
 - Display only the container IDs and names.
 
 **Command**:
+docker ps --format '{{.ID}}\t{{.Names}}'
 
 ### Task 3: Execute a Command Inside a Running Container
 
@@ -39,3 +41,4 @@ This task is designed to assess your proficiency with Docker's command-line inte
 - Execute the command `ls -l /usr` inside this container.
 
 **Command**:
+docker exec mycontainer ls -l /usr
